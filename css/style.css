@@ -193,9 +193,9 @@ ul {
 }
 .services .boxs {
   display: flex;
-  height: 360px;
+  /* height: 360px; */
   gap: 20px;
-  overflow-y: auto;
+  overflow-x: auto;
 }
 .services .boxs::-webkit-scrollbar {
   width: 0;
@@ -203,12 +203,12 @@ ul {
 .services .boxs .box {
   border: 1px solid #eee;
   padding: 20px;
-  height: 250px;
+  /* height: 250px; */
   /* box-shadow: 0 4px 30px 0 rgba(0, 0, 0, 10%); */
 }
-.services .boxs .box.active {
+/* .services .boxs .box.active {
   left: 50;
-}
+} */
 .services .boxs .box i {
   font-size: 25px;
   border: 2px solid var(--main-color);
@@ -250,7 +250,8 @@ ul {
 }
 .actives {
   border: 1px solid var(--main-color) !important;
-  transform: translateY(50px);
+  /* transform: translateX(50px); */
+  margin: 20px;
   transition: 0.5s;
 }
 .dot {
