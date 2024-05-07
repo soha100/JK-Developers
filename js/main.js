@@ -31,3 +31,34 @@ spans.forEach((span, index) => {
     boxes[index].scrollIntoView({ behavior: "smooth", block: "start" });
   });
 });
+
+//slider one
+
+const sliderContainers = document.querySelectorAll(".slider .content");
+const nextBtn = document.querySelectorAll(".next-btn");
+const prevBtn = document.querySelectorAll(".prev-btn");
+
+sliderContainers.forEach((item, i) => {
+  nextBtn[i].addEventListener("click", () => {
+    item.scrollLeft += 150;
+  });
+
+  prevBtn[i].addEventListener("click", () => {
+    item.scrollLeft -= 150;
+  });
+});
+
+// slider two
+const productContainers = document.querySelectorAll(".customers");
+const nxtBtn = document.querySelectorAll(".nxt-btn");
+const preBtn = document.querySelectorAll(".pre-btn");
+
+productContainers.forEach((ele, j) => {
+  nxtBtn[j].addEventListener("click", () => {
+    ele.scrollLeft += 150;
+  });
+
+  preBtn[j].addEventListener("click", () => {
+    ele.scrollLeft -= 150;
+  });
+});
